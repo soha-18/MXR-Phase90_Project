@@ -14,6 +14,10 @@ The below represents schematic diagram of MXR Phase 90. The complete circuit has
 
 ![Figure 2](Images/MXRschematic.png)
 
+### Project Struture
+
+![Figure 6](Images/Project Structure.png)
+
 List of components used in the circuit are listed below: 
 
 | Components  | Value |
@@ -64,7 +68,7 @@ In this project, the JFET model has been developed in ACME source code library o
 JFET behavior can be described mathematically as:
 $$
 	I_d =\begin{cases}
-				0, & \text{if $V_{gs} \leq V_p \hspace{1mm} \cap \hspace{1mm} V_{ds} \geq 0 $}.\\
+				0, & \text{if $V_{gs} \leq V_p \hspace{1mm} \cap \hspace{1mm} V_{ds} \geq 0 $}\\
 				2\cdot(\frac{I_{DSS}}{V_p^2})\cdot(V_{gs} - V_p - \frac{V_{ds}}{2}) \cdot V_{ds}, & \text{if $V_{ds}<V_{gs} - V_p \hspace{1mm} \cap\hspace{1mm}  V_{ds} \geq 0 $}\\
 				I_{DSS} \cdot (1-(\frac{V_{gs}}{V_p})^2) & \text{if $V_{ds} \geq V_{gs} - V_p \hspace{1mm} \cap \hspace{1mm}  V_{ds} \geq 0 $}
 			\end{cases}
