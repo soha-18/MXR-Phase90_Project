@@ -16,7 +16,7 @@ The below represents schematic diagram of MXR Phase 90. The complete circuit has
 
 ### Project Struture
 
-![Figure 6](Images/Project Structure.png)
+![Figure 6](Images/ProjectStructure.png)
 
 List of components used in the circuit are listed below: 
 
