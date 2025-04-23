@@ -67,16 +67,7 @@ From the above equation, it is proved that the input signal is shifted in phase 
 In this project, the JFET model has been developed in ACME source code library of Julia. Current and Voltage elements inside the JFET model including polarity has been expressed using the state-space mathematical model.
 JFET behavior can be described mathematically as:
 
-$$
-
-\begin{equation*}
-	I_d =\begin{cases}
-				0, & \text{if $V_{gs} \leq V_p \hspace{1mm} \cap \hspace{1mm} V_{ds} \geq 0 $}\\
-				2\cdot(\frac{I_{DSS}}{V_p^2})\cdot(V_{gs} - V_p - \frac{V_{ds}}{2}) \cdot V_{ds}, & \text{if $V_{ds}<V_{gs} - V_p \hspace{1mm} \cap\hspace{1mm}  V_{ds} \geq 0 $}\\
-				I_{DSS} \cdot (1-(\frac{V_{gs}}{V_p})^2) & \text{if $V_{ds} \geq V_{gs} - V_p \hspace{1mm} \cap \hspace{1mm}  V_{ds} \geq 0 $}
-			\end{cases}
-\end{equation*}
-$$
+![Figure 7](Images/JFET_eq.png)
 
 
 ```
